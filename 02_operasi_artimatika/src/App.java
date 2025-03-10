@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class App {
+    @SuppressWarnings("resource")
     public static void main(String[] args) throws Exception {
         int angka1 = 50;
         int angka2 = 50;
@@ -68,7 +69,8 @@ public class App {
         kuantitas = input.nextInt();
         
         total = harga * kuantitas;
-        
+
+        // Tampilkan output
         System.out.println("-----------------------");
         System.out.println("Harga Barang = Rp " +  harga);
         System.out.println("Kuantitas  = " +  kuantitas);
